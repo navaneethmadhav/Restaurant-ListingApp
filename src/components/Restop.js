@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { RxClock } from "react-icons/rx";
+import { BsClockFill } from "react-icons/bs";
+
 
 function Restop({op}) {
   console.log(op);
@@ -14,12 +17,12 @@ function Restop({op}) {
   return (
     <div>
       <Button variant="warning" className='mt-4' onClick={handleShow}>
-        Opening Times
+        Opening Times <RxClock className='ms-3'/>
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Operating Hours</Modal.Title>
+          <Modal.Title>Operating Hours <BsClockFill className='ms-3'/> </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <ListGroup>

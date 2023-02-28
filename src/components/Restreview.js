@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import { TfiCommentAlt } from "react-icons/tfi";
 
 function Restreview({review}) {
     const [open, setOpen] = useState(false);
@@ -16,7 +17,7 @@ function Restreview({review}) {
                     Rating : {item.rating}
                 </Card.Text>
                 <Card.Text>
-                    <Button className='btn btn-dark' onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}>Comments</Button>
+                    <Button className='btn btn-success' onClick={() => setOpen(!open)} aria-controls="example-collapse-text" aria-expanded={open}>Comments <TfiCommentAlt className='ms-3'/> </Button>
                 <Collapse in={open}>
                     <div id="example-collapse-text">
                         {item.comments}

@@ -48,7 +48,7 @@ function Viewrest() {
                             <ListGroup.Item variant="dark">Address : {viewrest.address}</ListGroup.Item>
                             <ListGroup.Item variant="dark">Neighborhood : {viewrest.neighborhood}</ListGroup.Item>
                             <ListGroup.Item variant="dark">Cuisine type : {viewrest.cuisine_type}</ListGroup.Item>
-                            <ListGroup.Item variant="dark">Latitude and Longitude : </ListGroup.Item>
+                            {/* <ListGroup.Item variant="dark">Latitude and Longitude : </ListGroup.Item> */}
                             
                         </ListGroup>
                         <><Restop op={viewrest.operating_hours}/></>

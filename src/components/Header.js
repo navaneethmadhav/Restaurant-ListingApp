@@ -14,7 +14,7 @@ function Header() {
           height="80"
           className="d-inline-block align-top"
         />{' '}
-        Find Your Taste
+        <h3 style={{marginLeft:"80px",marginTop:"-60px",fontStyle:"italic",fontWeight:"bolder"}}>Find Your Taste</h3>
       </Navbar.Brand>
     </Container>
   </Navbar></div>
